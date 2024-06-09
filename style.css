@@ -9,6 +9,12 @@
  /* Icon Library - Get Bootstrap  */
  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* CSS Variables */
+ :root{
+   --bg-color-main:#44ca3a;
+   --font-family-main-header:"Signika", sans-serif;
+   --font-family-content:"Poppins", sans-serif;
+ }
  /* Universal Selector */
  *{
     padding: 0;
@@ -20,15 +26,112 @@
  #header{
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    background-color: var(--bg-color-main);
+    color: #f4f4f1;
+    font-family: var(--font-family-main-header);
+    padding: 10px 0px;
+
  }
 
  #header h2{
     padding-left: 3dvw;
+    letter-spacing:2px;
+    font-size: xx-large;
+ }
+ #header h2 span{
+   color: black;
  }
  #header #cart{
     padding-right: 3dvw;
     font-size: xx-large;
-    color: teal;
+    color: #f4f4f1;
     font-weight: bold;
  }
+ /* Navigation Section */
+ #nav-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+ }
+ #nav-section img {
+   width: 100px;
+   padding-left: 1dvw; 
+      
+ }
+ #nav-list{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 3dvw;
+   font-family: var(--font-family-main-header);
+   font-size: large;
+   padding-right: 1dvw; 
+ }
+
+ #nav-list li a{
+   text-decoration: none;
+   color: var(--bg-color-main);
+ }
+ /* Main Section */
+#main-section{
+   width: 1200px;
+   margin: 20px auto;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   row-gap: 20px;
+}
+
+.product-item{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 300px;
+   border: 1px solid gray;
+   border-radius: 15px;
+   box-shadow: 11px 14px 30px -4px rgba(0,0,0,0.83);
+   -webkit-box-shadow: 11px 14px 30px -4px rgba(0,0,0,0.83);
+   -moz-box-shadow: 11px 14px 30px -4px rgba(0,0,0,0.83);
+border: 1px solid #b3bdb2;
+font-family: var(--font-family-main-header);
+margin-left: 1px;
+
+}
+.product-item img{
+   width: 100%;
+   height: 280px;
+   border-radius: 15px;
+   padding: 5px; 
+}
+.product-item p,h3{
+   padding: 5px;
+   font-family: var(--font-family-content);
+}
+.product-buttons{
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+   padding-left: 7px;
+   padding-right: 7px;
+   border: #0ba400;
+}
+.product-buttons button{
+   font-family: var(--font-family-main-heading);
+   padding: 5px 10px;
+   background-color: var(--bg-color-main);
+   border: #0ba400;
+   color: var(--white-color);
+   border-radius: 10px;
+}
+.product-buttons i{
+   font-size: large;
+   background-color: var(--bg-color-main);
+   padding: 5px 10px;
+   border-radius: 10px;
+   color: var(--white-color);
+}
+
+
+ 
